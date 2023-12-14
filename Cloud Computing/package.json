@@ -1,0 +1,25 @@
+{
+  "name": "patani_api",
+  "version": "1.0.0",
+  "description": "patani_api for capstone",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"testing\")",
+    "start": "app.js",
+    "start-dev": "nodemon ./app.js"
+  },
+  "author": "CloudComputing",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^7.7.0",
+    "cloudinary": "^1.41.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.5",
+    "sequelize": "^6.35.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Harga Produk Prediksi</title>
+</head>
+
+<body>
+
+    <h1>Prediksi Harga Produk</h1>
+
+    <p>
+        Masukkan nama produk:
+        <input type="text" id="product-input" />
+        <button id="predict-button">Prediksi 7 Hari</button>
+    </p>
+
+    <h2>Hasil Prediksi:</h2>
+    <div id="result-area"></div>
+
+    <!-- Load Tensorflow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+    <!-- Load index.js which contains model logic -->
+    <script src="predict.js"></script>
+
+</body>
+
+</html>

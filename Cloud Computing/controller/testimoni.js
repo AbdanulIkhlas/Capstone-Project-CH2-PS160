@@ -16,9 +16,7 @@ const getAllTestimoni = async (req, res) => {
             message: "Internal server error"
         });
     }
-
 };
-
 
 const postTestimoni = async (req, res) => {
     try {

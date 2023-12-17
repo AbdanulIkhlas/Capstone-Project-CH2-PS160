@@ -24,6 +24,10 @@ const Product = my_db.define("products", {
         type: sequelize.STRING,
         allowNull: false,
     },
+    product_durability: {
+        type: sequelize.STRING,
+        allowNull: false,
+    },
     image: {
         type: sequelize.STRING,
         allowNull: false

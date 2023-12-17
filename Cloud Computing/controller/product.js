@@ -3,10 +3,25 @@ const products = require('../model/products_model');
 const { promisify } = require('util');
 const cloudinary = require("../utils/cloudinary_config");
 const upload = require("../middleware/image_upload");
+const categories = require('../model/category_model');
+const sellers = require('../model/seller_model');
+
+
 
 const getAllProducts = async (req, res) => {
     try {
-        const product = await products.findAll();
+        const product = await products.findAll({
+            include: [
+                {
+                    model: categories,
+                    attributes: ['id', 'category_name']
+                },
+                {
+                    model: sellers,
+                    attributes: ['id', 'name']
+                }
+            ]
+        });
         res.status(200).json({
             status: "success",
             message: "Successfully fetched all product data",
@@ -25,7 +40,18 @@ const getAllProducts = async (req, res) => {
 const getProductById = async (req, res) => {
     try {
         const { productId } = req.params;
-        const product = await products.findByPk(productId);
+        const product = await products.findByPk(productId, {
+            include: [
+                {
+                    model: categories,
+                    attributes: ['id', 'category_name']
+                },
+                {
+                    model: sellers,
+                    attributes: ['id', 'name']
+                }
+            ]
+        });
 
         if (!product) {
             return res.status(400).json({
@@ -34,7 +60,7 @@ const getProductById = async (req, res) => {
             });
         }
 
-        res.status(200).json({
+        res.status(201).json({
             status: "success",
             message: "Successfully fetched product data",
             product: product
@@ -55,15 +81,18 @@ const postProduct = async (req, res) => {
         if (req.file) {
             const files = req.file.path;
 
-            const { product_name, price, stock, description, sellerId, categoryId } = req.body;
-            const uploadFile = await cloudinary.uploader.upload(files);
+            const { product_name, price, stock, description, product_durability, sellerId, categoryId } = req.body;
+            const uploadFile = await cloudinary.uploader.upload(files, {
+                folder: 'product_image'
+            });
             imageUrl = uploadFile.secure_url;
-
+            console.log(`product ${product_name}`);
             const newProduct = await products.create({
                 product_name: product_name,
                 price: price,
                 stock: stock,
                 description: description,
+                product_durability: product_durability,
                 image: imageUrl,
                 sellerId: sellerId,
                 categoryId: categoryId,
@@ -75,7 +104,8 @@ const postProduct = async (req, res) => {
             })
         }
     } catch (error) {
-        console.log(`Error : ${error.message}`);
+        console.log(`Error: ${error.message}`);
+        res.status(500).json({ message: 'Internal server error' });
     }
 };
 
@@ -114,17 +144,20 @@ const editProduct = async (req, res) => {
         let imageUrl;
         if (req.file) {
             const files = req.file.path;
-            const uploadFile = await cloudinary.uploader.upload(files);
+            const uploadFile = await cloudinary.uploader.upload(files, {
+                folder: 'product_image'
+            });
 
             // Dapatkan URL gambar baru
             imageUrl = uploadFile.secure_url;
         }
-        const { product_name, price, stock, description, sellerId, categoryId } = req.body;
+        const { product_name, price, stock, description, product_durability, sellerId, categoryId } = req.body;
         const updateProduct = {
             product_name,
             price,
             stock,
             description,
+            product_durability,
             sellerId,
             categoryId
         }

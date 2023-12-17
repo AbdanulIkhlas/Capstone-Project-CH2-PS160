@@ -102,7 +102,9 @@ const postBuyer = async (req, res) => {
             const files = req.file.path;
             const { email, password, nama, alamat, kordinat, no_hp } = req.body;
 
-            const uploadFile = await cloudinary.uploader.upload(files);
+            const uploadFile = await cloudinary.uploader.upload(files, {
+                folder: 'user_profile_image'
+            });
 
             //didapat image URL
             imageUrl = uploadFile.secure_url;
@@ -128,7 +130,6 @@ const postBuyer = async (req, res) => {
     }
 };
 
-
 //post seller data
 const postSeller = async (req, res) => {
     try {
@@ -136,7 +137,10 @@ const postSeller = async (req, res) => {
         if (req.file) {
             const files = req.file.path;
             const { email, password, nama, alamat, kordinat, no_hp, no_rekening } = req.body;
-            const uploadFile = await cloudinary.uploader.upload(files);
+            const uploadFile = await cloudinary.uploader.upload(files,
+                {
+                    folder: 'user_profile_image'
+                });
 
             //didapat image URL
             imageUrl = uploadFile.secure_url;
@@ -286,7 +290,9 @@ const updateBuyer = async (req, res) => {
         let imageUrl;
         if (req.file) {
             const files = req.file.path;
-            const uploadFile = await cloudinary.uploader.upload(files);
+            const uploadFile = await cloudinary.uploader.upload(files, {
+                folder: 'user_profile_image'
+            });
 
             // Dapatkan URL gambar baru
             imageUrl = uploadFile.secure_url;
@@ -340,19 +346,17 @@ const updateBuyer = async (req, res) => {
 
 const updateSeller = async (req, res) => {
     try {
-        const { id } = req.params; // Ambil ID pembeli yang ingin diubah dari URL
-
+        const { id } = req.params;
         let imageUrl;
         if (req.file) {
             const files = req.file.path;
-            const uploadFile = await cloudinary.uploader.upload(files);
-
-            // Dapatkan URL gambar baru
+            const uploadFile = await cloudinary.uploader.upload(files, {
+                folder: 'user_profile_image'
+            });
             imageUrl = uploadFile.secure_url;
         }
-
-        // Buat objek yang berisi perubahan data
         const { email, password, nama, alamat, kordinat, no_hp, no_rekening } = req.body;
+        console.log(`name update : ${nama}`);
         const updatedData = {
             email,
             password,
@@ -363,7 +367,6 @@ const updateSeller = async (req, res) => {
             no_rekening,
             image: imageUrl
         };
-
         if (imageUrl) {
             updatedData.image = imageUrl;
         }
@@ -374,7 +377,6 @@ const updateSeller = async (req, res) => {
             }
         });
 
-        // Periksa apakah ada baris yang terpengaruh (diupdate)
         if (result[0] === 0) {
             return res.status(404).json({
                 status: 'failed',
@@ -384,9 +386,7 @@ const updateSeller = async (req, res) => {
             });
         }
 
-        // Ambil data terbaru setelah update
         const updatedSeller = await sellers.findByPk(id);
-
         res.status(200).json({
             status: 'success',
             message: 'Seller updated successfully',

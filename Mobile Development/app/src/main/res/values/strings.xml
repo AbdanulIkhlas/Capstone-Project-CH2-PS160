@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Patani Mobile</string>
+    <string name="minus_symbol">-</string>
+    <string name="plus_symbol">+</string>
+    <string name="add_to_cart">Tambah ke keranjang :</string>
+    <string name="search_item">Search Item Product</string>
 </resources>

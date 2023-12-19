@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -143,7 +144,7 @@ fun DetailProductScreen(
             }
             Column(
                 horizontalAlignment = Alignment.Start,
-                modifier =  Modifier
+                modifier = Modifier
                     .padding(10.dp)
             ) {
                 Text(
@@ -188,10 +189,16 @@ fun DetailProductScreen(
                         ProductItem(menu = menu, modifier = Modifier.padding(8.dp))
                     }
                 }
-                Spacer(modifier = Modifier.height(16.dp))
-                Row (
-                    modifier = Modifier
-                        .fillMaxWidth()
+            }
+            
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Box(
+                modifier = Modifier
+                    .padding(horizontal = 20.dp)
+            ) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Button(
                         onClick = {},
@@ -199,16 +206,17 @@ fun DetailProductScreen(
                             .weight(1f)
                             .fillMaxWidth()
                     ) {
-                        Surface (
+                        Surface(
                             color = MaterialTheme.colorScheme.primary
                         ) {
-                            Text(text = "Rp 5.000", color = MaterialTheme.colorScheme.onPrimary)
+                            Text(text = "Rp5.000", color = MaterialTheme.colorScheme.onPrimary)
                         }
                     }
                     Spacer(modifier = Modifier.width(8.dp))
 
                     Column(
-                        modifier = Modifier.padding(16.dp)
+                        modifier = Modifier
+                            .align(Alignment.CenterVertically)
                     ) {
                         ProductCount(
                             1,
@@ -217,7 +225,7 @@ fun DetailProductScreen(
                             onProductDecreased = { if (orderCount > 0) orderCount-- },
                             modifier = Modifier
                                 .align(Alignment.CenterHorizontally)
-                                .padding(bottom = 16.dp)
+                                .padding(16.dp)
                         )
                         totalHarga = baseHarga * orderCount
                     }
@@ -236,6 +244,52 @@ fun DetailProductScreen(
                 }
             }
 
+            Spacer(modifier = Modifier.height(10.dp))
+//                Row (
+//                    modifier = Modifier
+//                        .fillMaxWidth()
+//                ) {
+//                    Button(
+//                        onClick = {},
+//                        modifier = Modifier
+//                            .weight(1f)
+//                            .fillMaxWidth()
+//                    ) {
+//                        Surface (
+//                            color = MaterialTheme.colorScheme.primary
+//                        ) {
+//                            Text(text = "Rp 5.000", color = MaterialTheme.colorScheme.onPrimary)
+//                        }
+//                    }
+//                    Spacer(modifier = Modifier.width(8.dp))
+//
+//                    Column(
+//                        modifier = Modifier.padding(16.dp)
+//                    ) {
+//                        ProductCount(
+//                            1,
+//                            orderCount,
+//                            onProductIncreased = { orderCount++ },
+//                            onProductDecreased = { if (orderCount > 0) orderCount-- },
+//                            modifier = Modifier
+//                                .align(Alignment.CenterHorizontally)
+//                                .padding(bottom = 16.dp)
+//                        )
+//                        totalHarga = baseHarga * orderCount
+//                    }
+//                    Button(
+//                        onClick = {},
+//                        modifier = Modifier
+//                            .weight(1f)
+//                            .fillMaxWidth()
+//                    ) {
+//                        Surface(
+//                            color = MaterialTheme.colorScheme.primary
+//                        ) {
+//                            Text(text = "Tawaran", color = MaterialTheme.colorScheme.onPrimary)
+//                        }
+//                    }
+//                }
         }
     }
 }

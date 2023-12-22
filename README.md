@@ -17,11 +17,11 @@
 
   
   <p align="center">
-    <img src="https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/A%20Documentation/Patani1.png" alt="Banner" width="170">
-    <img src="https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/A%20Documentation/Patani2.png" alt="Banner" width="176">
-    <img src="https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/A%20Documentation/Patani3.png" alt="Banner" width="170">
-    <img src="https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/A%20Documentation/Patani4.png" alt="Banner" width="162">
-    <img src="https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/A%20Documentation/Patani5.png" alt="Banner" width="177">
+    <img src="https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/A%20Documentation/Patani1.png" alt="Banner" width="160">
+    <img src="https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/A%20Documentation/Patani2.png" alt="Banner" width="166">
+    <img src="https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/A%20Documentation/Patani3.png" alt="Banner" width="160">
+    <img src="https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/A%20Documentation/Patani4.png" alt="Banner" width="152">
+    <img src="https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/A%20Documentation/Patani5.png" alt="Banner" width="167">
   </p>
 </p>
 <br/>

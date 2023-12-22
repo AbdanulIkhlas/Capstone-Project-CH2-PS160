@@ -1,0 +1,213 @@
+[{
+        "namaProduk": "Bayam",
+        "prediksiHarga": 14000
+    },
+    {
+        "namaProduk": "Kangkung",
+        "prediksiHarga": 13500
+    },
+    {
+        "namaProduk": "Sawi",
+        "prediksiHarga": 7500
+    },
+    {
+        "namaProduk": "Brokoli",
+        "prediksiHarga": 35500
+    },
+    {
+        "namaProduk": "Kubis",
+        "prediksiHarga": 14000
+    },
+    {
+        "namaProduk": "Wortel",
+        "prediksiHarga": 16000
+    },
+    {
+        "namaProduk": "Kentang",
+        "prediksiHarga": 15000
+    },
+    {
+        "namaProduk": "Kacang_Polong",
+        "prediksiHarga": 58500
+    },
+    {
+        "namaProduk": "Kacang_Tanah",
+        "prediksiHarga": 30000
+    },
+    {
+        "namaProduk": "Buncis",
+        "prediksiHarga": 33500
+    },
+    {
+        "namaProduk": "Labu_Siam",
+        "prediksiHarga": 18000
+    },
+    {
+        "namaProduk": "Labu_Kuning",
+        "prediksiHarga": 11500
+    },
+    {
+        "namaProduk": "Lobak_Merah",
+        "prediksiHarga": 36000
+    },
+    {
+        "namaProduk": "Lobak_Putih",
+        "prediksiHarga": 30000
+    },
+    {
+        "namaProduk": "Tomat",
+        "prediksiHarga": 15500
+    },
+    {
+        "namaProduk": "Terong",
+        "prediksiHarga": 13000
+    },
+    {
+        "namaProduk": "Paprika_Hijau",
+        "prediksiHarga": 37000
+    },
+    {
+        "namaProduk": "Paprika_Kuning",
+        "prediksiHarga": 80000
+    },
+    {
+        "namaProduk": "Paprika_Merah",
+        "prediksiHarga": 79000
+    },
+    {
+        "namaProduk": "Bawang_Bombay",
+        "prediksiHarga": 20000
+    },
+    {
+        "namaProduk": "Bawang_Putih",
+        "prediksiHarga": 36000
+    },
+    {
+        "namaProduk": "Bawang_Merah",
+        "prediksiHarga": 32000
+    },
+    {
+        "namaProduk": "Cabai_Keriting_Merah",
+        "prediksiHarga": 36000
+    },
+    {
+        "namaProduk": "Cabai_Keriting_Hijau",
+        "prediksiHarga": 38000
+    },
+    {
+        "namaProduk": "Cabai_Rawit_Hijau",
+        "prediksiHarga": 29500
+    },
+    {
+        "namaProduk": "Cabai_Rawit_Merah",
+        "prediksiHarga": 78000
+    },
+    {
+        "namaProduk": "Cabai_Rawit_Kering",
+        "prediksiHarga": 69000
+    },
+    {
+        "namaProduk": "Mentimun",
+        "prediksiHarga": 35000
+    },
+    {
+        "namaProduk": "Pare_Paria",
+        "prediksiHarga": 20000
+    },
+    {
+        "namaProduk": "Jamur",
+        "prediksiHarga": 152000
+    },
+    {
+        "namaProduk": "Kembang_Kol",
+        "prediksiHarga": 17000
+    },
+    {
+        "namaProduk": "Daun_Bawang",
+        "prediksiHarga": 31000
+    },
+    {
+        "namaProduk": "Kemangi",
+        "prediksiHarga": 44500
+    },
+    {
+        "namaProduk": "Selada",
+        "prediksiHarga": 5000
+    },
+    {
+        "namaProduk": "Seledri",
+        "prediksiHarga": 13000
+    },
+    {
+        "namaProduk": "Benih_Kacang_Panjang",
+        "prediksiHarga": 21000
+    },
+    {
+        "namaProduk": "Benih_Kangkung",
+        "prediksiHarga": 46500
+    },
+    {
+        "namaProduk": "Benih_Jagung_Manis",
+        "prediksiHarga": 14000
+    },
+    {
+        "namaProduk": "Benih_Timun",
+        "prediksiHarga": 13000
+    },
+    {
+        "namaProduk": "Benih_Buncis",
+        "prediksiHarga": 10000
+    },
+    {
+        "namaProduk": "Cangkul_Sawah",
+        "prediksiHarga": 35000
+    },
+    {
+        "namaProduk": "Bajak_Singkal",
+        "prediksiHarga": 72500
+    },
+    {
+        "namaProduk": "Garu_Sisir",
+        "prediksiHarga": 830000
+    },
+    {
+        "namaProduk": "Garu_Piring",
+        "prediksiHarga": 9000
+    },
+    {
+        "namaProduk": "Lada",
+        "prediksiHarga": 149000
+    },
+    {
+        "namaProduk": "Cengkeh",
+        "prediksiHarga": 199000
+    },
+    {
+        "namaProduk": "Kayu_Manis",
+        "prediksiHarga": 22500
+    },
+    {
+        "namaProduk": "Kapulaga",
+        "prediksiHarga": 87000
+    },
+    {
+        "namaProduk": "Kunyit",
+        "prediksiHarga": 9000
+    },
+    {
+        "namaProduk": "Ubi_Jalar",
+        "prediksiHarga": 9500
+    },
+    {
+        "namaProduk": "Ubi_Kayu",
+        "prediksiHarga": 6000
+    },
+    {
+        "namaProduk": "Singkong",
+        "prediksiHarga": 2000
+    },
+    {
+        "namaProduk": "Talas",
+        "prediksiHarga": 24500
+    }
+]

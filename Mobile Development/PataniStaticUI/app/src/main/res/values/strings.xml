@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Patani</string>
+    <string name="logo_image">Gambar Logo</string>
+    <string name="sign_in">Sign In</string>
+    <string name="log_in">Log In</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="search_item">Search Item</string>
+    <string name="iklan">Iklan</string>
+    <string name="iklan2">iklan</string>
+</resources>

@@ -44,13 +44,18 @@
         </li>
         <li>
           <a href="#cloud-computing">Cloud Computing</a>
+          <ul>
+            <li><a href="#deployed-link">Deployed Link</a></li>
+            <li><a href="#repository-api">Repository API</a></li>
+            <li><a href="#tools-cc">Tools CC</a></li>
+          </ul>
         </li>
         <li>
           <a href="#mobile-development">Mobile Development</a>
           <ul>
-            <li><a href="#prerequisites">Prerequisites</a></li>
+            <li><a href="#system-requirement">System Requirement</a></li>
             <li><a href="#installation">Installation</a></li>
-            <li><a href="#usage">How to use</a></li>
+            <li><a href="#tools-md">Tools MD</a></li>
           </ul>
         </li>
       </ul>
@@ -91,8 +96,18 @@
 
 ### Cloud Computing
 <div style="text-align: justify">
-  Build infrastructure on Google Cloud Platform (GCP). Creating a database to store data using Cloud SQL and creating APIs (backend) using Node Js and Express to connect the database with Mobile Development (Frontend), deployment of APIs to cloud Run, deployment of models provided by machine learning to cloud runs, and creating APIs for models to be used in Mobile Development as an implementation of machine learning. and monitoring on GCP.
+  Created several API services to support the functionality of the application, such as login-register API, news API using a web scraper, and fish price prediction API for implementing the machine learning model. After that, we deployed them as backend services of the application on Google Cloud Platform, by utilizing Cloud Run, Cloud SQL, Cloud Storage, and Container Registry services.
 </div>
+
+#### Deployed Link : 
+* [patani-backend](https://patani-backend-5yrauczmnq-et.a.run.app)
+* [patani-ml](https://patani-ml-5yrauczmnq-et.a.run.app)
+* [patani-ml-api](https://patani-ml-api-5yrauczmnq-et.a.run.app)
+
+#### Repository API : 
+* [patani-backend](https://github.com/YudaSaputraa/patani-backend)
+* [patani-ml](https://github.com/YudaSaputraa/patani_ml)
+* [patani-ml-api](https://github.com/YudaSaputraa/patani-ml-APIs)
 
 <br/><br/>
 
@@ -100,6 +115,19 @@
 <div style="text-align: justify">
   We carried out the process of creating static views using Jetpack Compose. Upon completion, we performed API integration with CRUD operations from the implementation of Cloud Computing APIs. With the provided API, we adjusted and implemented it within the application using Retrofit. After everything was completed, we integrated Machine Learning into the application using a model that had been exported in JSON format.
 </div>
+
+#### System requirement:
+* Android 12+
+* Android Studion Giraffe
+* Internet Connection
+* Java Version 1.8
+* targetSDK 33
+
+#### Installation:
+* Download our project here [Zip Application](https://github.com/AbdanulIkhlas/Capstone-Project-CH2-PS160/blob/main/Patani.zip)
+* Build and run our project from Android Studio
+
+#### Tools MD : 
 
 
 ## Our Team
